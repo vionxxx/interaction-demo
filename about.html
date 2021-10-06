@@ -30,35 +30,42 @@
             </div>
         </div>
     </nav>
-
-    <!-- 返回上一步-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container px-5">
-            <li><a class="navbar-brand" href="index.html">Ctrl+Z</a></li>
-        </div>
-    </nav>
-
-
     <!-- Header-->
     <header class="bg-dark py-5">
-
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-6">
-                    <img src="assets/pic.jpg" alt="" style="width:100%">
+                    <img src="#!" alt="" style="width:100%">
                     <div class="text-center my-5">
-                        <p class="lead text-white-50 mb-4">
-                            Datapia是一个数据服务平台，您可以通过它采集、处理、交易数据。作为新用户，您可以注册免费试用。在三天试用期间，您有权访问Lv1数据集。试用期后，您必须付费以续约Datapia服务。您是否接受Datapia的条款和条件？
+                        <p class="lead text-white-50 mb-4" style="text-align:center">
+                            #流动的舞台<br>
+                            #设创道场<br>
+                            #技术赛道<br>
+                            #第二小组<br>
                         </p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="2_1.html">Yes</a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="2_2.html">No</a>
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" id="Like">Like ( 0 )</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#!">Love ( 0 )</a>
                         </div>
+
+
+                        <script>
+                            var button = document.getElementById("Like"),
+                                count = 0;
+                            button.onclick = function () {
+                                count += 1;
+                                button.innerHTML = "Like ( " + count+" ) ";
+                            };
+                            
+                        </script>
+
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -70,6 +77,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
